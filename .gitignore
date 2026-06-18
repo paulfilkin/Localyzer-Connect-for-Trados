@@ -9,10 +9,9 @@ TestResults/
 *.suo
 *.user
 
-# Strong-name keys
-*.snk
-
 # Project-specific
 .VSCodeCounter/
 launchSettings.json
 .claude/
+build.log
+*.binlog
