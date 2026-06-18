@@ -2,11 +2,12 @@
 
 	<PropertyGroup>
 		<TargetFramework>net48</TargetFramework>
+		<PlatformTarget>x64</PlatformTarget>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<UseWPF>true</UseWPF>
 		<StartAction>Program</StartAction>
-		<StartProgram>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio18\SDLTradosStudio.exe</StartProgram>
-		<PluginDeploymentPath>$(AppData)\Trados\Trados Studio\18\Plugins</PluginDeploymentPath>
+		<StartProgram>$(ProgramFiles)\Trados\Trados Studio\Studio19Beta\SDLTradosStudio.exe</StartProgram>
+		<PluginDeploymentPath>$(AppData)\Trados\Trados Studio\19Beta\Plugins</PluginDeploymentPath>
 		<CreatePluginPackage>true</CreatePluginPackage>
 	</PropertyGroup>
 
@@ -24,37 +25,37 @@
 	<ItemGroup>
 		<!-- Trados Studio API references -->
 		<Reference Include="Sdl.Desktop.IntegrationApi">
-			<HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio18\Sdl.Desktop.IntegrationApi.dll</HintPath>
+			<HintPath>$(ProgramFiles)\Trados\Trados Studio\Studio19Beta\Sdl.Desktop.IntegrationApi.dll</HintPath>
 		</Reference>
 		<Reference Include="Sdl.Desktop.IntegrationApi.Extensions">
-			<HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio18\Sdl.Desktop.IntegrationApi.Extensions.dll</HintPath>
+			<HintPath>$(ProgramFiles)\Trados\Trados Studio\Studio19Beta\Sdl.Desktop.IntegrationApi.Extensions.dll</HintPath>
 		</Reference>
 		<Reference Include="Sdl.Desktop.Platform">
-			<HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio18\Sdl.Desktop.Platform.dll</HintPath>
+			<HintPath>$(ProgramFiles)\Trados\Trados Studio\Studio19Beta\Sdl.Desktop.Platform.dll</HintPath>
 		</Reference>
 		<Reference Include="Sdl.FileTypeSupport.Framework.Core">
-			<HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio18\Sdl.FileTypeSupport.Framework.Core.dll</HintPath>
+			<HintPath>$(ProgramFiles)\Trados\Trados Studio\Studio19Beta\Sdl.FileTypeSupport.Framework.Core.dll</HintPath>
 		</Reference>
 		<Reference Include="Sdl.FileTypeSupport.Framework.Implementation">
-			<HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio18\Sdl.FileTypeSupport.Framework.Implementation.dll</HintPath>
+			<HintPath>$(ProgramFiles)\Trados\Trados Studio\Studio19Beta\Sdl.FileTypeSupport.Framework.Implementation.dll</HintPath>
 		</Reference>
 		<Reference Include="Sdl.ProjectAutomation.Core">
-			<HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio18\Sdl.ProjectAutomation.Core.dll</HintPath>
+			<HintPath>$(ProgramFiles)\Trados\Trados Studio\Studio19Beta\Sdl.ProjectAutomation.Core.dll</HintPath>
 		</Reference>
 		<Reference Include="Sdl.ProjectAutomation.FileBased">
-			<HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio18\Sdl.ProjectAutomation.FileBased.dll</HintPath>
+			<HintPath>$(ProgramFiles)\Trados\Trados Studio\Studio19Beta\Sdl.ProjectAutomation.FileBased.dll</HintPath>
 		</Reference>
 		<Reference Include="Sdl.ProjectAutomation.Settings">
-			<HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio18\Sdl.ProjectAutomation.Settings.dll</HintPath>
+			<HintPath>$(ProgramFiles)\Trados\Trados Studio\Studio19Beta\Sdl.ProjectAutomation.Settings.dll</HintPath>
 		</Reference>
 		<Reference Include="Sdl.TranslationStudio.Editor">
-			<HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio18\Sdl.TranslationStudio.Editor.dll</HintPath>
+			<HintPath>$(ProgramFiles)\Trados\Trados Studio\Studio19Beta\Sdl.TranslationStudio.Editor.dll</HintPath>
 		</Reference>
 		<Reference Include="Sdl.TranslationStudioAutomation.IntegrationApi">
-			<HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio18\Sdl.TranslationStudioAutomation.IntegrationApi.dll</HintPath>
+			<HintPath>$(ProgramFiles)\Trados\Trados Studio\Studio19Beta\Sdl.TranslationStudioAutomation.IntegrationApi.dll</HintPath>
 		</Reference>
 		<Reference Include="Sdl.TranslationStudioAutomation.IntegrationApi.Extensions">
-			<HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio18\Sdl.TranslationStudioAutomation.IntegrationApi.Extensions.dll</HintPath>
+			<HintPath>$(ProgramFiles)\Trados\Trados Studio\Studio19Beta\Sdl.TranslationStudioAutomation.IntegrationApi.Extensions.dll</HintPath>
 		</Reference>
 		<Reference Include="System" />
 		<Reference Include="System.Core" />
