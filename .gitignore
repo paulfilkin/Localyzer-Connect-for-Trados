@@ -1,0 +1,18 @@
+# .NET build artefacts
+bin/
+obj/
+packages/
+TestResults/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+
+# Strong-name keys
+*.snk
+
+# Project-specific
+.VSCodeCounter/
+launchSettings.json
+.claude/
