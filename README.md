@@ -26,7 +26,7 @@ Restart Trados Studio after installation.
 
 Trados Studio 2026 is the first 64-bit release of Trados Studio. Plugins built for Trados Studio 2024 (32-bit) will not load in 2026, and vice versa, so a separate plugin line is required.
 
-The 2.x line is currently built against Trados Studio 2026 Beta. When 2026 GA ships, a small follow-up release will switch the project file from the Beta install paths to the production install paths.
+The 2.x line is built against Trados Studio 2026 GA. The initial 2.x work was done against the 2026 Beta SDK (`Studio19Beta`); the current release (`v2.0.0-trados2026`) is built against the GA SDK (`Studio19`, 19.0.0.3043) and has been verified to install and run in Trados Studio 2026 GA. The earlier Beta build remains available as the `v2.0.0-trados2026-beta` tag.
 
 What changed between 1.x and 2.x:
 
@@ -35,7 +35,7 @@ What changed between 1.x and 2.x:
 - All HintPath references use `$(ProgramW6432)` so the build works regardless of MSBuild bitness
 - Plugin deployment path updated for Studio 19
 - Manifest `RequiredProduct` updated to cover Trados Studio 2026 (19.0 to 19.0.9)
-- `Microsoft.Web.WebView2` bumped to match the version shipped in Studio 2026 Beta
+- `Microsoft.Web.WebView2` bumped to match the version shipped in Studio 2026
 - Modern .NET SDK resource compatibility shim added for embedded icon resources
 
 No public API changes were required in the plugin code itself. The Trados SDK assemblies the plugin depends on remain at the same namespaces and types between Studio 18 and Studio 19.
@@ -47,7 +47,7 @@ No public API changes were required in the plugin code itself. The Trados SDK as
 - Visual Studio 2022 (or Build Tools for Visual Studio) with the .NET desktop development workload
 - Trados Studio installed locally (the build references SDK assemblies from the install folder via `HintPath`)
   - For the 1.x line: Trados Studio 2024 at the default 32-bit install location
-  - For the 2.x line: Trados Studio 2026 Beta at the default 64-bit install location
+  - For the 2.x line: Trados Studio 2026 at the default 64-bit install location (`Studio19`)
 - .NET Framework 4.8 Developer Pack
 
 ### Build
